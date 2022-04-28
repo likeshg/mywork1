@@ -20,16 +20,16 @@ public class spinnerActivity extends Activity {
         setTitle("춘식이 사진보기(Spinner)");
 
         final String[] picList = {"집순이", "전신셀카", "밤에휴대폰", "해냥", "요리", "냥냥냥냥",
-        "엔젤", "파자마", "춤셀카", "야식", "벚꽃", "후디", "해변"};
+        "엔젤", "파자마", "춤셀카", "야식", "벚꽃", "후디", "해변", "일어나", "핵주먹"};
 
         Button btnReturn = findViewById(R.id.btnReturn);
 
         Integer[] picture = {R.drawable.cs1, R.drawable.cs2, R.drawable.cs3, R.drawable.cs4,
         R.drawable.cs5, R.drawable.cs6, R.drawable.cs7, R.drawable.cs8, R.drawable.cs9,
-        R.drawable.cs10, R.drawable.cs11, R.drawable.cs12, R.drawable.cs13};
+        R.drawable.cs10, R.drawable.cs11, R.drawable.cs12, R.drawable.cs13, R.drawable.cs14,
+        R.drawable.cs15};
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner1);
-
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, picList);
@@ -52,7 +52,8 @@ public class spinnerActivity extends Activity {
 
         btnReturn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 finish();
             }
         });

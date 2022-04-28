@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFE8A4"
     tools:context=".MainActivity">
 
     <ImageView
@@ -26,14 +27,22 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:text="춘식이 사진전" />
+            android:layout_margin="10dp"
+            android:background="#F3C848"
+            android:fontFamily="@font/cookierunregular"
+            android:textSize="25dp"
+            android:text="춘식이 사진 보기" />
 
         <Button
-            android:id="@+id/btnDiary"
+            android:id="@+id/btnStore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#F3C848"
+            android:fontFamily="@font/cookierunregular"
+            android:textSize="25dp"
             android:text="춘식이 굿즈 검색" />
 
     </LinearLayout>

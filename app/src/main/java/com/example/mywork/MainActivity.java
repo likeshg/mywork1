@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+    Intent intent = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,13 +16,21 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Button btnCs = (Button) findViewById(R.id.btnCs);
+        Button btnStore = (Button) findViewById(R.id.btnStore);
 
-        Intent intent = null;
 
         btnCs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), spinnerActivity.class);
+                intent = new Intent(getApplicationContext(), spinnerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplicationContext(), storeActivity.class);
                 startActivity(intent);
             }
         });

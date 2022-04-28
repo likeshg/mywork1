@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFE8A4"
+    >
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/ivPicture"
@@ -21,6 +22,10 @@
         android:id="@+id/btnReturn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="돌아가기"/>
+        android:background="#F3C848"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/cookierunregular"
+        android:textSize="25dp"
+        android:text="메인화면 돌아가기"/>
 
 </LinearLayout>
