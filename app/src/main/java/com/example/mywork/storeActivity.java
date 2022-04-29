@@ -17,9 +17,6 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 
 public class storeActivity extends Activity {
-    String Tag = storeActivity.class.getSimpleName();
-
-    WebView webView1 = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
